@@ -12,4 +12,5 @@ INSERT into Students VALUES
 (2, 'nahom', 24),
 (3, 'cherf', 24)
 
-SELECT * FROM Students;
+SELECT Sage FROM Students
+WHERE Sage >= 24;
