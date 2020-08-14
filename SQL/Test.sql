@@ -14,3 +14,12 @@ INSERT into Students VALUES
 
 SELECT Sage FROM Students
 WHERE Sage >= 24;
+
+
+
+
+
+
+
+
+
