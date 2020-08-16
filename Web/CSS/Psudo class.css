@@ -1,0 +1,23 @@
+/* p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: green;
+} */
+
+/* p:first-of-type{
+    color: blue;
+} */
+
+p:last-of-type{
+    color: yellow;
+}
+
+/* p:nth-child(odd){
+    background: red;
+} */
+
+:nth-of-type(even){
+    background: blue;
+}
