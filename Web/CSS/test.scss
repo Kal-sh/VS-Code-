@@ -1,11 +1,53 @@
+// --------Colors---------
+$color-primary: #ff0000;
+$color-secondary: yellow;
+$color-text-dark: green;
+
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
-$color-primary: #ff0000;
 
-.navigation{
+nav{
     margin: 80px;
     background-color: $color-primary;
+}
+
+.navigation{
+    list-style: none;
+    float: left;
+
+    li{
+        display: inline-block;
+        margin-left: 30px;
+
+        &:first-child{
+            margin: 0;
+        }
+
+        a:link {
+            // text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-text-dark ;
+        }
+    }
+    
+}
+
+// a:link{
+//             // text-align: center;
+//             text-decoration: none;
+//             text-transform: uppercase;
+//             color: $color-text-dark ;
+
+// }
+.button{
+    // margin: 40px;
+    // background-color: $color-secondary;
+    float: right;
 }
