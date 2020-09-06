@@ -1,9 +1,19 @@
-// --------Colors---------
-$color-primary: #ff0000;
+// ------- Colors ---------
+$color-primary: green;
 $color-secondary: yellow;
-$color-text-dark: green;
+$color-text-dark: rgb(231, 212, 212);
 
+//------- width --------
+$width-button: 150px;
 
+//----- mixin ------
+@mixin clearfix {
+    &::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
 
 
 *{
@@ -15,6 +25,9 @@ $color-text-dark: green;
 nav{
     margin: 80px;
     background-color: $color-primary;
+
+    @include clearfix;
+    
 }
 
 .navigation{
@@ -43,4 +56,36 @@ nav{
     // margin: 40px;
     // background-color: $color-secondary;
     float: right;
+}
+
+.btn-main:link,
+.btn-hot:link{
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 100px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: $width-button;
+        // border: 1px solid pink;
+}
+
+.btn-main{
+    &:link{
+        background: $color-secondary;
+    }
+
+    &:hover{
+        background: darken($color-text-dark, 40%);
+    }
+}
+
+.btn-hot{
+    &:link{
+        background: lighten($color-text-dark, 50%);
+    }
+
+    &:hover{
+        background: darken($color-secondary,5%);
+    }
 }

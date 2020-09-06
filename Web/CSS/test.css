@@ -5,7 +5,13 @@
 
 nav {
   margin: 80px;
-  background-color: #ff0000;
+  background-color: green;
+}
+
+nav::after {
+  content: '';
+  clear: both;
+  display: table;
 }
 
 .navigation {
@@ -25,10 +31,37 @@ nav {
 .navigation li a:link {
   text-decoration: none;
   text-transform: uppercase;
-  color: green;
+  color: #e7d4d4;
 }
 
 .button {
   float: right;
+}
+
+.btn-main:link,
+.btn-hot:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.btn-main:link {
+  background: yellow;
+}
+
+.btn-main:hover {
+  background: #995656;
+}
+
+.btn-hot:link {
+  background: white;
+}
+
+.btn-hot:hover {
+  background: #e6e600;
 }
 /*# sourceMappingURL=test.css.map */
