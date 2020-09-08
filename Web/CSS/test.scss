@@ -8,84 +8,87 @@ $width-button: 150px;
 
 //----- mixin ------
 @mixin clearfix {
-    &::after{
+    &::after {
         content: '';
         clear: both;
         display: table;
     }
 }
 
+@mixin style-link-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-text-dark;
+}
 
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 
-nav{
+nav {
     margin: 80px;
     background-color: $color-primary;
 
     @include clearfix;
-    
+
 }
 
-.navigation{
+.navigation {
     list-style: none;
     float: left;
 
-    li{
+    li {
         display: inline-block;
         margin-left: 30px;
 
-        &:first-child{
+        &:first-child {
             margin: 0;
         }
 
         a:link {
             // text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $color-text-dark ;
+           @include style-link-text;
         }
     }
-    
+
 }
 
-.button{
+.button {
     // margin: 40px;
     // background-color: $color-secondary;
     float: right;
 }
 
 .btn-main:link,
-.btn-hot:link{
-        padding: 10px;
-        display: inline-block;
-        text-align: center;
-        border-radius: 100px;
-        text-decoration: none;
-        text-transform: uppercase;
-        width: $width-button;
-        // border: 1px solid pink;
+.btn-hot:link {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    width: $width-button;
+    // border: 1px solid pink;
+    @include style-link-text;
 }
 
-.btn-main{
-    &:link{
+.btn-main {
+    &:link {
         background: $color-secondary;
     }
 
-    &:hover{
+    &:hover {
         background: darken($color-text-dark, 40%);
     }
 }
 
-.btn-hot{
-    &:link{
+.btn-hot {
+    &:link {
         background: lighten($color-text-dark, 50%);
     }
 
-    &:hover{
-        background: darken($color-secondary,5%);
+    &:hover {
+        background: darken($color-secondary, 5%);
     }
 }
