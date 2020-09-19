@@ -108,6 +108,9 @@ SELECT * FROM staff;
 UPDATE stu_council set email='kk@gmal.com'
 WHERE id=2
 
+UPDATE stu_council set adress='merkato'
+WHERE id=3
+
 
 insert into stu_council VALUES
     ('bole','ab@gmail.com',3)
