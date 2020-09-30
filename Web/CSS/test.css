@@ -65,3 +65,16 @@ nav::after {
 .btn-hot:hover {
   background: #e6e600;
 }
+
+body {
+  position: relative;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ /* position: absolute; */
+}
