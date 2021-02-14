@@ -1,0 +1,25 @@
+h2 ~ p {
+	color: red;
+}
+
+p.one {
+	color: yellow;
+}
+
+.two {
+	color: purple;
+}
+/*
+p:first-of-type {
+	color: green;
+}
+p:last-child {
+	color: aqua;
+}
+p:last-of-type {
+	color: red;
+}
+p:nth-child(3) {
+	color: brown;
+}
+*/

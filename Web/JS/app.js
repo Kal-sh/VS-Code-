@@ -151,8 +151,8 @@ switch (day) {
 //ternary operator
 
 /*
-let status = 'online',
-	color;
+let status = 'offline',
+color;
 
 color = status === 'offline' ? console.log('red') : console.log('green');
 color = status === 'offline' ? 'red' : 'green';
