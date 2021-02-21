@@ -1,5 +1,5 @@
 
-# ! Take in 2 numbers and add the first and last digit
+#! Take in 2 numbers and add the first and last digit
 
 firstNum = input('Input First Number:\n')
 secondNum = input('Input Second Number:\n')

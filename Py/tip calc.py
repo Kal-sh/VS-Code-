@@ -1,3 +1,6 @@
+
+#! Tip Calculator
+
 bill = float(input('What was the Total Bill? '))
 tip = int(input('What percentage tip would you like to give? 10, 12 or 15? '))
 numPpl = int(input('How many ppl to split the bill? '))
