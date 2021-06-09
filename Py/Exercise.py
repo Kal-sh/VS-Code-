@@ -25,3 +25,7 @@ if extraCheese == 'Y':
 
 print(f'Your pizza is gonna be {size} with the total bill of {bill}$')
 '''
+# %%
+print('hello')
+# %%
+print('')
