@@ -26,6 +26,7 @@ public class Exercise {
          * int finalScore = score + (levelCompleted * bonus);
          * System.out.println(finalScore); }
          */
+
     }
 
 }
