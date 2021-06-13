@@ -3,7 +3,7 @@ public class shit {
         int results = 0;
         for (int i = 0; i < 5; i++) {
             if (i == 3) {
-                results += 10;
+                results += 20;
             } else {
                 results += i;
             }
