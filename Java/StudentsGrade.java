@@ -6,7 +6,7 @@ public class StudentsGrade {
         String name;
         String sex;
         int age;
-        int grade;
+        float grade;
 
         // * Student name input from user
         Scanner stuName = new Scanner(System.in);
@@ -26,8 +26,9 @@ public class StudentsGrade {
         // * Student Grade input from user
         Scanner stuGrade = new Scanner(System.in);
         System.out.print("Enter Student grade :- ");
-        grade = stuGrade.nextInt();
+        grade = stuGrade.nextFloat();
 
+        // * Remarks calculator
         if (grade >= 90) {
             System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
                     + ". Excellent!");
