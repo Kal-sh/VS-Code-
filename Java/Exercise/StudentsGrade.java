@@ -9,39 +9,38 @@ public class StudentsGrade {
         float grade;
 
         // * Student name input from user
-        Scanner stuName = new Scanner(System.in);
+        Scanner student = new Scanner(System.in);
         System.out.print("Enter Student Name :- ");
-        name = stuName.nextLine();
+        name = student.nextLine();
 
         // * Student Age input from user
-        Scanner stuAge = new Scanner(System.in);
         System.out.print("Enter Student Age :- ");
-        age = stuAge.nextInt();
+        age = student.nextInt();
 
         // * Student Sex input from user
-        Scanner stuSex = new Scanner(System.in);
         System.out.print("Enter Student Sex :- ");
-        sex = stuSex.next();
+        sex = student.next();
 
         // * Student Grade input from user
-        Scanner stuGrade = new Scanner(System.in);
         System.out.print("Enter Student grade :- ");
-        grade = stuGrade.nextFloat();
+        grade = student.nextFloat();
 
         // * Remarks calculator
-        if (grade >= 90) {
-            System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
-                    + ". Excellent!");
-        } else if (grade > 80 && grade < 90) {
-            System.out.println(
-                    "Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade + ". Good!");
-        } else if (grade < 70 && grade > 60) {
-            System.out.println(
-                    "Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade + ". Not Bad!");
-        } else {
-            System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
-                    + ". Needs Improvement!");
+        if (grade > 0 && grade < 100) {
+            System.out.println("Invalid input");
+            if (grade >= 90) {
+                System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
+                        + ". Excellent!");
+            } else if (grade > 80 && grade < 90) {
+                System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
+                        + ". Good!");
+            } else if (grade < 70 && grade > 60) {
+                System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
+                        + ". Not Bad!");
+            } else {
+                System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
+                        + ". Needs Improvement!");
+            }
         }
-
     }
 }
