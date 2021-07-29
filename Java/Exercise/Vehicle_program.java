@@ -1,4 +1,3 @@
-package Exercise;
 
 // import java.util.Scanner;
 class Vehicle {

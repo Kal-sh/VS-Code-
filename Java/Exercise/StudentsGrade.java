@@ -27,7 +27,6 @@ public class StudentsGrade {
 
         // * Remarks calculator
         if (grade > 0 && grade < 100) {
-            System.out.println("Invalid input");
             if (grade >= 90) {
                 System.out.println("Student " + name + ", Gender " + sex + ", Age " + age + ", your grade is " + grade
                         + ". Excellent!");

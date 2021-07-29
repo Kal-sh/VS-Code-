@@ -25,8 +25,15 @@ public class Exercise {
          * 
          * int finalScore = score + (levelCompleted * bonus);
          * System.out.println(finalScore); }
+         * 
+         * 
+         * byte byteValue = 32; short shortValue = 23; int intValue = 2334; long
+         * longValue; longValue = 50000L + (10L * (byteValue + shortValue + intValue));
+         * short shortTotal = (short)(1000 + 10 * (byteValue + shortValue + intValue));
+         * System.out.println(shortTotal); System.out.println(longValue);
          */
-
+        double x = 6.2 % 2;
+        System.out.println(x);
     }
 
 }
