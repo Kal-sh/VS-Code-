@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "O0Hb+px8JTq/l2OsVmKrw+hiLZXY7WKm027bRpCyKLMu+ml4W1Kb1KEjLSoywkRKlUkmcPn15fLC0MdC+Zx7tA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kalec\\Documents\\Github\\VS-Code-\\#Class\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kalec\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
