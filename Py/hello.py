@@ -46,34 +46,35 @@ print(s.isalpha())
 print(s.isnumeric())
  '''
 '''
- fruits = ['apples', 'mangos', 'oranges', 'grapes']
+fruits = ['apples', 'mangos', 'oranges', 'grapes']
  
- # *append
- fruits.append(22)
- 
- # *Remove
- fruits.remove('mangos')
- 
- # *Insert into position
- fruits.insert(1, 'strawberries')
- 
- # *Remove from position
- fruits.pop(4)
- 
- # *Reverse list
- fruits.reverse()
- 
- # *Sort alphabetically
- fruits.sort()
- 
- #*Reverse sort
- fruits.sort(reverse=true)
+# *append
+ruits.append(22)
 
- #*Round
- print(round(6753/7, 5))
+# *Remove
+fruits.remove('mangos')
 
- #*floor
- print(8//3)
+# *Insert into position
+fruits.insert(1, 'strawberries')
 
- print(fruits)
- '''
+# *Remove from position
+fruits.pop(4)
+
+# *Reverse list
+fruits.reverse()
+
+# *Sort alphabetically
+fruits.sort()
+
+#*Reverse sort
+fruits.sort(reverse=true)
+
+#*Round
+print(round(6753/7, 5))
+
+#*floor
+
+
+print(8//3)
+print(fruits)
+'''
