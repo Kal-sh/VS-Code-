@@ -4,7 +4,7 @@
 height = float(input('What is your Height in m:\n'))
 weight = float(input('What is your Weight in kg:\n'))
 
-BMI = weight/(height*height)
+BMI = weight/(height**2)
 print(type(BMI))
 intBMI = int(BMI)
 # print(f'Your BMI is {int(BMI)}')
