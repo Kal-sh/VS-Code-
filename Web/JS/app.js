@@ -1,6 +1,6 @@
 //============= Example 1 ================
 
-/*
+/** 
 let rating = 9;
 
 if (rating > 4) {
@@ -12,7 +12,7 @@ if (rating > 4) {
 
 //============= Example 2 ================
 
-/*
+/**
 let value = 4;
 if (value === 3) {
 	console.log('true');
@@ -23,7 +23,7 @@ if (value === 3) {
 
 //============= Example 3 ================
 
-/*
+/**
 let num = 53;
 if (num % 2 != 0) {
 	console.log('ODD Number!');
@@ -34,7 +34,7 @@ if (num % 2 != 0) {
 
 //============= Example 4 ================
 
-/*
+/**
 let highScore = 52333,
 	userScore = 2455;
 
@@ -50,7 +50,7 @@ if (userScore >= highScore) {
 
 //============= Example 5 ================
 
-/*
+/**
 let password = prompt('Input password');
 
 if (password.length >= 8) {
@@ -66,7 +66,7 @@ if (password.length >= 8) {
 
 //============= Example 6 ================
 
-/*
+/**
 let password = prompt('Input Password');
 
 if (password.length >= 8 && password.indexOf(' ') === -1) {
@@ -78,7 +78,7 @@ if (password.length >= 8 && password.indexOf(' ') === -1) {
 
 //============= Example 7 ================
 
-/*
+/**
 let num = prompt('Input number b/n 1 and 10');
 
 if (num >= 1 && num <= 10) {
@@ -90,7 +90,7 @@ if (num >= 1 && num <= 10) {
 
 //============= Example 8 ================
 
-/*
+/**
 let age = prompt('inpute ur age');
 
 if (age < 6 || age >= 60) {
@@ -102,7 +102,7 @@ if (age < 6 || age >= 60) {
 
 //============= Example 9 ================
 
-/*
+/**
 let flavor = 'grape';
 
 if (flavor !== 'grape' && flavor !== 'cherry') {
@@ -117,7 +117,7 @@ if (!(flavor === 'grape' || flavor === 'cherry')) {
 //============= Example 10 ================
 //switch
 
-/*
+/**
 let day = prompt('Input Day of the week');
 // let day = 4;
 switch (day) {
@@ -150,7 +150,7 @@ switch (day) {
 //============= Example 11 ================
 //ternary operator
 
-/*
+/**
 let status = 'offline',
 color;
 

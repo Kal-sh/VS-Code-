@@ -1,4 +1,4 @@
-/*
+/**
  var userName1 = prompt("what is ur First Name?");
  var userName2 = prompt("what is ur Last Name?");
  var userAge = prompt("How old are you?");
