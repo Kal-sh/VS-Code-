@@ -1,25 +1,36 @@
-h2 ~ p {
-	color: red;
+body {
+	background-color: lightgreen;
+	margin: 0;
+	width: 80%;
 }
 
-p.one {
-	color: yellow;
+.container {
+	/* width: 80%; */
+	margin: 0 auto;
+	/* max-width: 900px; */
 }
 
-.two {
-	color: purple;
+.content {
+	float: left;
+	width: 70%;
 }
-/*
-p:first-of-type {
-	color: green;
+.side-bar {
+	float: right;
+	background-color: orange;
+	width: 25%;
 }
-p:last-child {
-	color: aqua;
+
+header {
+	background-color: brown;
+	text-align: center;
+	padding: 50px 0;
+	color: #fff;
 }
-p:last-of-type {
-	color: red;
+
+footer {
+	background-color: gray;
+	clear: both;
+	text-align: center;
+	/* width: 70%; */
+	padding: 20px 0;
 }
-p:nth-child(3) {
-	color: brown;
-}
-*/
