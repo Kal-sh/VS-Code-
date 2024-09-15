@@ -12,8 +12,8 @@ def get_float_input(prompt, min_value, max_value):
         except ValueError:
             print("Invalid input. Please enter a valid number.")
             
-height = get_float_input('What is your Height in m:\n', 0.5, 4.0)
-weight = get_float_input('What is your Weight in kg:\n',30,500)
+height = get_float_input('What is your Height in m:\n', 0.5, 4)
+weight = get_float_input('What is your Weight in kg:\n', 30, 500)
 
 BMI = weight/height**2
 
