@@ -14,7 +14,7 @@ def get_int_input(prompt, min_value, max_value):
             
 
 
-age = get_int_input("how old are you?\n", 1, 90)
+age = get_int_input("how old are you?\n", 0, 90)
 remaningYear = 90-age
 daysRemaining = remaningYear*365
 weeksRemaining = remaningYear*52
