@@ -5,13 +5,13 @@ def get_float_input(prompt, min_value, max_value):
     while True:
         try:
             value = float(input(prompt))
-            if value < min_value or value > max_value:
-                print(f"Invalid input. Please enter a value between {min_value} and {max_value}.")
-            else:
+            if  min_value <= value <= max_value:
                 return value
+            else:
+                print(f"Invalid input. Please enter a value between {min_value} and {max_value}.")
         except ValueError:
             print("Invalid input. Please enter a valid number.")
-            
+
 height = get_float_input('What is your Height in m:\n', 0.5, 4)
 weight = get_float_input('What is your Weight in kg:\n', 30, 500)
 
