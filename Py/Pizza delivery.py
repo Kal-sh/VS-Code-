@@ -3,9 +3,9 @@
 
 print('Welcome to Pizza house delivery!\n')
 
-size = input('what size pizza do you want? S, M or L\n')
-addPapperoni = input('\nDo you want Papperoni? Y or N\n')
-extraCheese = input('\nDo you want extra Cheese? Y or N\n')
+size = input('what size pizza do you want? S, M or L\n').capitalize()
+add_pepperoni = input('\nDo you want Pepperoni? Y or N\n').capitalize()
+extra_cheese = input('\nDo you want extra Cheese? Y or N\n').capitalize()
 bill = 0
 
 if size == 'S':
@@ -15,13 +15,13 @@ elif size == 'M':
 elif size == 'L':
     bill += 25
 
-if addPapperoni == 'Y':
+if add_pepperoni == 'Y':
     if size == 'S':
         bill += 2
     else:
         bill += 3
 
-if extraCheese == 'Y':
+if extra_cheese == 'Y':
     bill += 1
 
 print(f'your is gonna be {size} and total bill is gonna be {bill}')
