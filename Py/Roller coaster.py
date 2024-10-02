@@ -45,6 +45,5 @@ def main():
             print(f"your total bill is {bill}$")
 
 
-
 if __name__== "__main__":
     main()

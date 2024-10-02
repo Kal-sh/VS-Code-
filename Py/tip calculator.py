@@ -27,8 +27,8 @@ def main():
     tip = get_input_float('What percentage tip would you like to give?\n', 0 , 100)
 
     # Calculate the total bill and personal bill
-    total_ammount = calculate_total_bill(total_bill,tip)
-    personal_bill = calculate_personal_bill(total_ammount,num_people)
+    total_amount = calculate_total_bill(total_bill,tip)
+    personal_bill = calculate_personal_bill(total_amount,num_people)
 
     # Print result
     print(f'Each person should pay: {personal_bill:.2f}$')
