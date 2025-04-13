@@ -52,3 +52,19 @@ ul {
 .nav li {
 	margin-left: 20px;
 }
+
+.header {
+	background-color: black;
+	min-height: 400px;
+}
+
+.header img {
+	max-width: 50%;
+	border-radius: 50%;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
