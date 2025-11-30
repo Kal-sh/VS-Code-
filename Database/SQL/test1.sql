@@ -25,7 +25,7 @@ CREATE TABLE
         FOREIGN KEY (user_id) REFERENCES users (id)
     );
 
-INSERT INTO
+IERT INTO
     orders (user_id, product, amount)
 VALUES
     (1, 'Laptop', 999.99),
