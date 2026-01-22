@@ -1,5 +1,4 @@
-
-#! Love calculator
+# Love calculator
 print("Welcome to love calculator!\n")
 
 name1 = input("What is your full name? \n").lower()
@@ -12,8 +11,10 @@ love_count = sum(combined_string.count(c) for c in 'love')
 love_score = int(str(true_count) + str(love_count))
 
 
-if 10 >= love_score >  90:
-    print(f"Your love score is {love_score}, you go together like coke and mentos") #cspell:ignore mentos
+if 10 >= love_score > 90:
+    # cspell:ignore mentos
+    print(f"Your love score is {
+          love_score}, you go together like coke and mentos")
 elif 40 <= love_score <= 50:
     print(f"Your love score is {love_score}, you are alright together")
 else:
