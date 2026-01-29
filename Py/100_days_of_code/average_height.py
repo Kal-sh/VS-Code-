@@ -9,8 +9,6 @@ for i in range(0, len(student_heights)):
 
 for i in student_heights:
     height_sum += i
-
-for i in student_heights:
     num_stud += 1
 
 avg_height = height_sum/num_stud
