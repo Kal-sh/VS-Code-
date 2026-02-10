@@ -479,11 +479,11 @@ Last Edited: January 22, 2026 8:52 PM
   - **Value Error**
     - correct type but wrong value
 
-    ```python
-    int("abc")
+      ```python
+      int("abc")
 
-    # ValueError: invalid literal for int() with base 10: 'abc'
-    ```
+      # ValueError: invalid literal for int() with base 10: 'abc'
+      ```
 
   - **Index Error**
     - trying to access invalid index range
