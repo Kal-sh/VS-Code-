@@ -1,0 +1,14 @@
+h1 {
+  color: yellow;
+  background-color: #3b3b3b;
+  text-align: center;
+}
+
+p {
+  color: blue;
+  column-count: 3;
+}
+
+span {
+  margin: 10px;
+}
