@@ -225,7 +225,6 @@ let t = Symbol.for("shared");
 s === t; // => true
 s.toString(); // => "Symbol(shared)"
 Symbol.keyFor(t); // => "shared"
-*/
 console.log(globalThis);
 
 let s = new String("hello");
@@ -253,3 +252,75 @@ for (let i = 0; i < c.length; i++) {
 let e = Array.from(c);
 console.log(d);
 console.log(e);
+
+let x;
+let n = 18;
+x = "0b" + n.toString(2); // "0b10010"
+x = "0x" + n.toString(8); // "0x22"
+x = "0o" + n.toString(16); // "0o12"
+
+for (let i = 0; i < 10; i++) {
+  console.log(`Number ${i}\n`);
+
+  for (let j = 0; j < 5; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+}
+
+let j = 1;
+
+while (j < 100) {
+  if (j % 15 === 0) {
+    console.log("FizzBuzz");
+  } else if (j % 3 === 0) {
+    console.log("Fizz");
+  } else if (j % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(j);
+  }
+
+  j++;
+}
+
+let str = "abebe beso bela";
+
+for (let i in str) {
+  console.log(str[i]);
+}
+
+const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram", "Telegram"];
+
+for(let social in socials){
+console.log(socials[social])
+}
+
+socials.forEach((item) => {
+  console.log(item);
+});
+*/
+
+function sum(...numbers) {
+  let total = 0;
+
+  for (let i of numbers) {
+    total += i;
+  }
+  return total;
+}
+
+console.log(sum(1, 2, 3, 4, 5));
+
+function sums(...nums) {
+  return nums.reduce((a, b) => a + b, 0);
+}
+console.log(sums(3, 2, 4, 7));
+
+function getRandom(...arr) {
+  const randomIndex = Math.floor(Math.random() * arr.length);
+
+  const item = arr[randomIndex];
+  console.log(item);
+}
+
+getRandom(1, 2, 4, 5, 6);

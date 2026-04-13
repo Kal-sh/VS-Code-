@@ -9,8 +9,11 @@
   - Sun Microsystems (which owned Java) had the "JavaScript" trademark
   - Netscape licensed the name from Sun
   - When Oracle acquired Sun in 2010, they inherited the trademark
-    > **ECMAScript Naming:** To avoid trademark issues, the standardized language was named "ECMAScript", though "JavaScript" remains the popular brand name.
-    > `ES` the standard, `JS` the implementation, the actual programming language
+  - **ECMAScript Naming**
+    - To avoid trademark issues, the standardized language was named "ECMAScript"
+    - "JavaScript" remains the popular brand name.
+
+> `ES` the standard, `JS` the implementation, the actual programming language
 
 - case-sensitive
 - dynamically typed language
@@ -118,6 +121,12 @@
     ```javascript
     0b10101; // 21, (1*16 + 0*8 + 1*4 + 0*2 + 1*1)
     0o377; // 255: (3*64 + 7*8 + 7*1)
+
+    let x;
+    let n = 18;
+    x = "0b" + n.toString(2); // "0b10010"
+    x = "0x" + n.toString(8); // "0x22"
+    x = "0o" + n.toString(16); // "0o12"
     ```
 
 #### **Floating-point Literals**
@@ -127,12 +136,12 @@
   - real number followed by the letter e (or E)
   - notation represent the real number multiplied by 10 to the power of the exponent
 
-  ```javascript
-  3.14;
-  0.222;
-  4.3e23; // 4.3*10^23
-  24.25e-2; // 0.2425
-  ```
+    ```javascript
+    3.14;
+    0.222;
+    4.3e23; // 4.3*10^23
+    24.25e-2; // 0.2425
+    ```
 
 - separators in numeric literals
 
@@ -154,21 +163,21 @@
 - **Division by zero** will return plus or minus `Infinity`
   - zero / zero or Infinity / Infinity will result `NaN`
 
-  ```javascript
-  1 - 2 + 3; // (1 - 2) + 3 = 2
-  10 % 3; // 1
-  0 / 0; // NaN
-  5 / 0; // Infinity
-  -2 / Infinity; // -0
-  Infinity / Infinity; // NaN
-  console.log(1.79e308); // 1.79 * 10^308
-  console.log(1.8e308); // Infinity
-  console.log(9e-323); // 9 * 10^-323
-  console.log(2e-324); // 0
-  Math.pow(52, 222); // Infinity
-  Math.sqrt("hi"); // NaN
-  Number.MAX_VALUE * 2;
-  ```
+    ```javascript
+    1 - 2 + 3; // (1 - 2) + 3 = 2
+    10 % 3; // 1
+    0 / 0; // NaN
+    5 / 0; // Infinity
+    -2 / Infinity; // -0
+    Infinity / Infinity; // NaN
+    console.log(1.79e308); // 1.79 * 10^308
+    console.log(1.8e308); // Infinity
+    console.log(9e-323); // 9 * 10^-323
+    console.log(2e-324); // 0
+    Math.pow(52, 222); // Infinity
+    Math.sqrt("hi"); // NaN
+    Number.MAX_VALUE * 2;
+    ```
 
 #### **Binary Floating-point and Rounding errors**
 
@@ -494,19 +503,19 @@
 - **explicit** type conversion is when we tell it to actually change the type
 - **implicit** type conversion is when js changes the type of a value by it self
 
-```javascript
-let age = 25;
-console.log(typeof age); // number
-let strAge = String(age);
-console.log(typeof strAge); // string
-console.log(Number("hello")); // NaN
-console.log(Boolean(0)); // false
-console.log(Boolean(4)); // true
-console.log(Boolean("0")); // true
-console.log(Boolean("")); // false
+  ```javascript
+  let age = 25;
+  console.log(typeof age); // number
+  let strAge = String(age);
+  console.log(typeof strAge); // string
+  console.log(Number("hello")); // NaN
+  console.log(Boolean(0)); // false
+  console.log(Boolean(4)); // true
+  console.log(Boolean("0")); // true
+  console.log(Boolean("")); // false
 
-// 0 is a falsy value but any positive number and a string with value is a truthy value
-```
+  // 0 is a falsy value but any positive number and a string with value is a truthy value
+  ```
 
 ### **Type Coercion**
 
@@ -730,6 +739,8 @@ console.log(globalThis);
     console.log(y); // [ "abebe", "beshadu", "challa", "aster" ]
     ```
 
+- ## using `forEach` method
+
 ### Functions
 
 > **Function** is a snippet of a code which perform a some kind of specific task
@@ -820,54 +831,78 @@ console.log(globalThis);
     } // 0 1 2 3 4
     ```
 
-  - **while loops**
+    ```javascript
+    const socials = [
+      "Twitter",
+      "LinkedIn",
+      "Facebook",
+      "Instagram",
+      "Telegram",
+    ];
+
+    for (let social of socials) {
+      console.log(social);
+    }
+    ```
 
     ```javascript
-    let i = 0;
-    while (i < 5) {
+    for (let i in socials) {
+      console.log(socials[i]);
+    }
+    ```
+
+- **while loops**
+
+  ```javascript
+  let i = 0;
+  while (i < 5) {
+    console.log(i);
+    i++;
+  } // 0 1 2 3 4
+  ```
+
+- **do while loops**
+  - will run atleast once even if the condition is true or false
+
+    ```javascript
+    let i = 7;
+    do {
       console.log(i);
       i++;
-    } // 0 1 2 3 4
+    } while (i < 5); // 7
     ```
 
-  - **do while loops**
-    - will run atleast once even if the condition is true or false
+- **if else statement**
 
-      ```javascript
-      let i = 7;
-      do {
-        console.log(i);
-        i++;
-      } while (i < 5); // 7
-      ```
+  ```javascript
+  let i = 0;
+  if (i > 5) {
+    console.log("if loop works");
+  } else if (i > 10) {
+    console.log("looping");
+  } else {
+    console.log("last loop");
+  } // last loop
+  ```
 
-  - **if else statement**
+- switch statement
 
-    ```javascript
-    let i = 0;
-    if (i > 5) {
-      console.log("if loop works");
-    } else if (i > 10) {
-      console.log("looping");
-    } else {
-      console.log("last loop");
-    } // last loop
-    ```
+  ```javascript
+  let grade = "A";
 
-  - switch statement
+  switch (grade) {
+    case "A":
+      console.log("the best");
+      break;
+    case "B":
+      console.log("2nd best");
+      break;
+    default:
+      console.log("damn");
+      break;
+  } // the best
+  ```
 
-    ```javascript
-    let grade = "A";
+```
 
-    switch (grade) {
-      case "A":
-        console.log("the best");
-        break;
-      case "B":
-        console.log("2nd best");
-        break;
-      default:
-        console.log("damn");
-        break;
-    } // the best
-    ```
+```
