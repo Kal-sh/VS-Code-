@@ -1,4 +1,5 @@
 let val;
+const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram", "Telegram"];
 
 /*
 let user = {
@@ -289,7 +290,6 @@ for (let i in str) {
   console.log(str[i]);
 }
 
-const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram", "Telegram"];
 
 for(let social in socials){
 console.log(socials[social])
@@ -298,7 +298,6 @@ console.log(socials[social])
 socials.forEach((item) => {
   console.log(item);
 });
-*/
 
 function sum(...numbers) {
   let total = 0;
@@ -324,3 +323,27 @@ function getRandom(...arr) {
 }
 
 getRandom(1, 2, 4, 5, 6);
+
+function logSocials(social){
+  console.log(social)
+}
+socials.forEach(logSocials)
+*/
+
+let names = ["Abebe", "challa", "aster", "beshadu", "mola"];
+
+let result = names.filter((item) => item.length > 4);
+console.log(result);
+
+names.forEach((name) => {
+  if (name === "aster") return;
+  console.log(name);
+});
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+let evenNum = [];
+numbers.forEach((num) => {
+  if (num % 2 == 0) evenNum.push(num);
+});
+console.log(evenNum);

@@ -286,14 +286,15 @@
 - string concatenation
   - using `+` operator to add multiple strings together
 
-    ```javascript
-    let firstName = "abebe";
-    let lastName = "challa";
+        ```javascript
+        let firstName = "abebe";
+        let lastName = "challa";
+
     let age = 69;
 
-    let fullName = firstName + " " + lastName;
-    console.log(fullName); // abebe challa
-    ```
+        let fullName = firstName + " " + lastName;
+        console.log(fullName); // abebe challa
+        ```
 
 - String comparison
   - strings can be compared using `===` or `!==` operators
@@ -739,7 +740,36 @@ console.log(globalThis);
     console.log(y); // [ "abebe", "beshadu", "challa", "aster" ]
     ```
 
-- ## using `forEach` method
+- using `forEach` method
+  - used to loop through elements of an array and execute a function for each element
+  - can't break or stop it early
+  - can't return a new array
+
+    ```javascript
+    // Syntax
+    array.forEach((element, index, array) => {
+      console.log(element, index);
+    });
+    ```
+
+    ```javascript
+    const names = ["Abebe", "challa", "aster", "beshadu", "mola"];
+
+    names.forEach((name) => console.log(name));
+
+    names.forEach((name) => {
+      if (name === "aster") return; // only skips this iteration, doesn't stop the loop
+      console.log(name);
+    });
+    ```
+
+- using `filter` method
+  - create a new array containing only the elements that pass a certain condition
+
+    ```javascript
+    let result = names.filter((item) => item.length > 4);
+    console.log(result);
+    ```
 
 ### Functions
 
@@ -903,6 +933,6 @@ console.log(globalThis);
   } // the best
   ```
 
-```
+## Document Object Model (DOM)
 
-```
+- it's a structured representation of the HTML document
