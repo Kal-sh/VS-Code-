@@ -63,6 +63,7 @@
 - **Primitive types**:
   - they are immutable values passed by value
   - stored on `stack`
+    - Copying a primitive variable copies the actual value, not a reference
   - **_numbers, stings, boolean, symbol, bigint_**
   - special js values(**_null and undefined_**)
 
@@ -79,15 +80,17 @@
 - **Reference types:**
   - they are mutable collection of properties passed by reference
   - stored on the `heap`
+    - variable stored on the stack holds pointer as value that refers to its location on the heap
+    - Copying a reference type variable copies the reference, not the actual value
   - **_object, array, function, date, map, set, errors, promise_**
 
     > **Objects** are unordered collection of named values
 
     ```javascript
-    let person = {
+    const person = {
       name: "aster",
     };
-    let newPerson = person;
+    const newPerson = person;
     newPerson.name = "beshadu";
     console.log(person, newPerson); // { name: "beshadu" } { name: "beshadu" }
     ```
@@ -592,7 +595,7 @@ console.log(globalThis);
   - it might be obvious for numbers and booleans
   - strings are like arrays of characters but we can't modify the characters at specified index
     - when we use string methods that appears to return a modified string, js is returning a new string value
-    - two strings are equal if and only if they have the same set of characters in the same exact order
+    - two strings are **_equal_** if and only if they have the same set of characters in the same exact order
 
       ```javascript
       let s = "hello";
@@ -604,7 +607,7 @@ console.log(globalThis);
 
 - Reference type are mutable
   - objects are compared by reference
-  - two objects are equal if and only if they refer to the same underlying object
+  - two objects are **_equal_** if and only if they refer to the same underlying object
     - two objects aren't equal even if they have the same properties and values
     - two arrays aren't equal even if they have the same elements in the same order
   - assigning an object (or array) to variable simply assigns the reference
@@ -637,6 +640,45 @@ console.log(globalThis);
       // ES6
       let e = Array.from(c); // [ "a", "b", "c" ]
       ```
+
+### Object Literals
+
+- It's a collection of related data and functionality organized as `key -> vaule` pair
+
+  ```javascript
+  const person = {
+    name: "Aster",
+    age: 28,
+    isStudent: false,
+    address: {
+      state: "Addis ababa",
+      city: "Kolfe",
+    },
+    greeting: function () {
+      console.log(`hello ${this.name}`);
+    },
+  };
+
+  person.greeting(); // hello Aster
+  person[name]; // "Aster"
+  person.address.city; // "Kolfe"
+
+  // delete object property
+  delete person.age; // true
+
+  console.log(person);
+
+  // create object
+  const todo = new Object();
+
+  todo.id = 1;
+  todo.task = "buy milk";
+
+  // spread operator
+  const plan = { ...person, ...todo };
+
+  console.log(plan);
+  ```
 
 ### **Arrays**
 

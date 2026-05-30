@@ -1,14 +1,29 @@
+* {
+  background-color: #3b3b3b;
+  color: #fff;
+}
 h1 {
   color: yellow;
-  background-color: #3b3b3b;
+  background-color: #000;
   text-align: center;
 }
 
 p {
-  color: blue;
+  color: mistyrose;
+  line-height: 18px;
   column-count: 3;
+  column-gap: 70px;
 }
 
 span {
   margin: 10px;
+}
+
+ul {
+  border-left: 2px solid crimson;
+}
+
+li {
+  list-style-type: square;
+  text-shadow: 2px 2px blueviolet;
 }

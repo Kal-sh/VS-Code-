@@ -8,7 +8,6 @@
  console.log("you are " + userAge + " Years old.");
  console.log(typeof userName1);
  
- */
 
 /**
  
@@ -241,37 +240,83 @@ let job;
  person.calcAge();
  console.log(person);
  
- 
- //*Exercise
 
- let john = {
-	firstName: 'john',
-	mass: 65,
-	height: 1.67,
-	johnBMI: function () {
-		this.BMI = this.mass / (this.height * this.height);
-		return this.BMI;
-	},
- };
- let mark = {
- 	firstName: 'mark',
- 	mass: 70,
- 	height: 1.75,
- 	markBMI: function () {
- 		this.BMI = this.mass / (this.height * this.height);
- 		return this.BMI;
- 	},
- };
- john.johnBMI();
- mark.markBMI();
- console.log(john, mark);
- 
- if (john.BMI > mark.BMI) {
- 	console.log(`${john.firstName} has the higher BMI of ${john.BMI}`);
- } else i(john.BMI < mark.BMI){
- 	console.log(`${mark.firstName} has the higher BMI of ${mark.BMI}`);
- }else{
-	console.log(`They are the same.`)
- }
+//*Exercise
 
+let john = {
+  firstName: "john",
+  mass: 65,
+  height: 1.67,
+  johnBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+let mark = {
+  firstName: "mark",
+  mass: 70,
+  height: 1.75,
+  markBMI: function () {
+    this.BMI = this.mass / (this.height * this.height);
+    return this.BMI;
+  },
+};
+john.johnBMI();
+mark.markBMI();
+console.log(john, mark);
+
+if (john.BMI > mark.BMI) {
+  console.log(`${john.firstName} has the higher BMI of ${john.BMI}`);
+} else if (john.BMI < mark.BMI) {
+  console.log(`${mark.firstName} has the higher BMI of ${mark.BMI}`);
+} else {
+  console.log(`They are the same.`);
+}
+
+// reverse string
+let firstName = "ababe chala";
+let reversed = "";
+
+for (let i = 0; i < firstName.length; i++) {
+  reversed = firstName[i] + reversed;
+}
+
+console.log(reversed);
+
+class User {
+  constructor(username) {
+    this.username = username;
+  }
+
+  login() {
+    console.log(this.username + " logged in");
+  }
+}
+
+let u1 = new User("ababe");
+let u2 = new User("alex");
+
+u1.login();
+u2.login();
 */
+
+const person = {
+  name: "chall",
+  blogs: [
+    { title: "blog 1", likes: 30 },
+    { title: "blog 2", likes: 50 },
+  ],
+  logIn() {
+    console.log("user logged in");
+  },
+  logOut() {
+    console.log("user logged out");
+  },
+  logBlogs() {
+    this.blogs.forEach((blog) => {
+      console.log(blog.title, blog.likes);
+    });
+  },
+};
+
+person.logBlogs();
